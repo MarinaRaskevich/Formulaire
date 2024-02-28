@@ -1,0 +1,43 @@
+form {
+  width: 70vw;
+  margin: auto;
+}
+
+.container {
+  margin: 10px;
+}
+
+.identity {
+  background-color: #92dce5;
+}
+
+.shipping {
+  background-color: #427aa1;
+}
+
+.payment {
+  background-color: #05668d;
+}
+
+button {
+  background-color: #a5be00;
+  border-color: #d74b33;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.padding {
+  padding-left: 45px;
+}
+
+input,
+textarea {
+  border-color: #a5be00;
+  border-radius: 5px;
+  background-color: rgb(232, 244, 177);
+  padding: 4px;
+}
+
+p {
+  margin-bottom: 0;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/assets/css/style.css" />
+    <title>Exercice 6</title>
+  </head>
+  <body>
+    <form>
+      <!--Section Votre identité-->
+      <fieldset class="identity">
+        <legend class="identity">Votre identité</legend>
+        <div class="container">
+          <div>
+            <label for="lastname">1. Nom:</label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Ex: Dupont"
+              required
+              autocomplete="family-name"
+            />
+          </div>
+
+          <div>
+            <label for="fisrtname">2. Prénom:</label>
+            <input
+              type="text"
+              id="fisrtname"
+              name="fisrtname"
+              placeholder="Prénom"
+              autocomplete="given-name"
+            />
+          </div>
+
+          <div>
+            <label for="email">3. Adresse mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Adresse mail"
+              autocomplete="email"
+            />
+          </div>
+        </div>
+      </fieldset>
+
+      <!--Section Adresse de livraison-->
+      <fieldset class="shipping">
+        <legend class="shipping">Adresse de livraison</legend>
+        <div class="container">
+          <div>
+            <label for="address">1. Adresse:</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="5"
+              required
+              autocomplete="street-address"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="zipcode">2. Code postal:</label>
+            <input
+              type="text"
+              id="zipcode"
+              name="zipcode"
+              required
+              placeholder="Code postal"
+              autocomplete="postal-code"
+            />
+          </div>
+
+          <div>
+            <label for="city">3. Ville:</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              required
+              placeholder="Ville"
+              autocomplete="country"
+            />
+          </div>
+        </div>
+      </fieldset>
+
+      <!--Section Informations de règlement-->
+      <fieldset class="payment">
+        <legend class="payment">Informations de règlement</legend>
+        <div class="container">
+          <p>1. Type de carte bancaire:</p>
+          <div class="padding">
+            <input type="radio" id="visa" name="creditCard" value="visa" />
+            <label for="visa">VISA</label>
+          </div>
+          <div class="padding">
+            <input
+              type="radio"
+              id="mastercard"
+              name="creditCard"
+              value="mastercard"
+            />
+            <label for="mastercard">Mastercard</label>
+          </div>
+
+          <div>
+            <label for="cardNumber">2. Numéro de carte:</label>
+            <input
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              required
+              placeholder="Numéro de carte"
+              minlength="16"
+              maxlength="16"
+            />
+          </div>
+
+          <div>
+            <label for="securityCode">3. Code de sécurité:</label>
+            <input
+              type="text"
+              id="securityCode"
+              name="securityCode"
+              required
+              placeholder="Code de sécurité"
+              minlength="4"
+              maxlength="4"
+            />
+          </div>
+
+          <div>
+            <label for="cardOwner">4. Nom du titulaire:</label>
+            <input
+              type="text"
+              id="cardOwner"
+              name="cardOwner"
+              placeholder="Nom du titulaire"
+              required
+            />
+          </div>
+        </div>
+      </fieldset>
+      <button type="submit">J'achète</button>
+    </form>
+  </body>
+</html>
